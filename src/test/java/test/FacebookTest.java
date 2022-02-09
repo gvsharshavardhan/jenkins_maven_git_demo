@@ -2,7 +2,7 @@ package test;
 
 import org.testng.annotations.Test;
 
-public class Facebook {
+public class FacebookTest {
 
     @Test
     public void test1() {
