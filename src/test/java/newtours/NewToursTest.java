@@ -1,5 +1,6 @@
 package newtours;
 
+import mytests.BaseTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
@@ -7,7 +8,6 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-import test.BaseTest;
 
 public class NewToursTest extends BaseTest {
 

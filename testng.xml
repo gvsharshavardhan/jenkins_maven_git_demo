@@ -1,24 +1,28 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="search-module">
-    <test name="search-test-java">
+<suite name="search-module" parallel="tests">
+    <test name="search-mytests-java">
+        <parameter name="browser" value="chrome"></parameter>
         <parameter name="keyword" value="java"/>
         <classes>
             <class name="searchModule.SearchModuleTest"/>
         </classes>
     </test>
-    <test name="search-test-webdriver">
+    <test name="search-mytests-webdriver">
+        <parameter name="browser" value="firefox"></parameter>
         <parameter name="keyword" value="webdriver"/>
         <classes>
             <class name="searchModule.SearchModuleTest"/>
         </classes>
     </test>
-    <test name="search-test-docker">
+    <test name="search-mytests-docker">
+        <parameter name="browser" value="chrome"></parameter>
         <parameter name="keyword" value="docker"/>
         <classes>
             <class name="searchModule.SearchModuleTest"/>
         </classes>
     </test>
-    <test name="search-test-kubernetes">
+    <test name="search-mytests-kubernetes">
+        <parameter name="browser" value="firefox"></parameter>
         <parameter name="keyword" value="kubernetes"/>
         <classes>
             <class name="searchModule.SearchModuleTest"/>

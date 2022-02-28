@@ -1,6 +1,4 @@
-package test;
-
-import org.testng.annotations.Test;
+package mytests;
 
 public class FacebookTest {
 

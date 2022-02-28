@@ -1,4 +1,4 @@
-package test;
+package mytests;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -24,7 +24,7 @@ public class BaseTest {
     @Parameters({"browser"})
     public void setUp(String browser) throws MalformedURLException {
         String host = Optional.ofNullable(System.getProperty("hub_host")).orElse("localhost");
-        String browserName = Optional.ofNullable(browser).orElse("firefox");
+        String browserName = Optional.ofNullable(System.getProperty("browser")).orElse("firefox");
         String remote_url = "http://" + host + ":4444/wd/hub";
         if (browserName.equalsIgnoreCase("chrome")) {
             ChromeOptions options = new ChromeOptions();
